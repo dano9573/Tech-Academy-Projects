@@ -1,0 +1,88 @@
+USE Library_Management_System
+GO
+
+/*---------------------------------------------------------------
+	QUERY STATEMENTS
+  -------------------------------------------------------------*/
+  
+  -- Quearies for "The Lost Tribe" owned by the library 
+  -- branch whose name is "Sharpstown"--
+
+CREATE PROC sharpstown_lookup
+AS
+SELECT copies_no_of_copies
+FROM tbl_book_copies
+WHERE copies_bookid = 102 AND copies_branchid = 1005
+GO 
+
+-- How many copies of the book titled "The Lost Tribe" are --
+-- owned by each library branch? --
+
+CREATE PROC lost_tribe_copies
+AS
+SELECT copies_branchid, copies_no_of_copies
+FROM tbl_book_copies
+WHERE copies_bookid = 102
+GO 
+
+-- Retrieve the names of all borrowers who do not --
+-- have any books checked out. --
+
+CREATE PROC no_card_usage
+AS
+SELECT borrower_name
+FROM tbl_borrower
+WHERE borrower_cardno NOT IN(SELECT book_loans_cardno FROM tbl_book_loans)
+GO
+
+-- Books due today from Sharpstown --
+
+CREATE PROC due_date_sharpstown
+AS
+SELECT a.book_title, b.borrower_name, b.borrower_address
+FROM tbl_book a
+INNER JOIN tbl_book_loans ON a.book_bookid=tbl_book_loans.book_loans_bookid
+INNER JOIN tbl_borrower b ON tbl_book_loans.book_loans_cardno=b.borrower_cardno
+WHERE book_loans_branchid = 1004 AND book_loans_duedate <= '2017-11-28'
+GO
+
+-- For each library branch, retrieve the branch name and the total number of--
+-- books loaned out from that branch. --
+
+CREATE PROC total_books_by_branch
+AS
+SELECT COUNT(book_loans_branchid) AS 'Books Out', branch_branchname AS 'Branch Name'
+FROM tbl_book_loans 
+INNER JOIN tbl_library_branch ON tbl_book_loans.book_loans_branchid=tbl_library_branch.branch_branchid
+GROUP BY branch_branchname
+ORDER BY 1 DESC
+GO
+
+-- Over 5 books out by person --
+
+CREATE PROC number_of_books_out
+AS
+SELECT COUNT(book_loans_cardno) AS 'Books Out', borrower_name, borrower_address
+FROM tbl_book_loans 
+INNER JOIN tbl_borrower ON tbl_book_loans.book_loans_cardno=tbl_borrower.borrower_cardno
+GROUP BY borrower_name, borrower_address
+HAVING COUNT(book_loans_cardno) > 5
+ORDER BY 1 DESC
+GO
+
+--  Stephen King Books --
+
+CREATE PROC Stephen_King_Books
+AS
+SELECT book_title AS 'Book Name', copies_no_of_copies AS 'Number of Copies'
+FROM tbl_book
+INNER JOIN tbl_book_copies ON tbl_book.book_bookid=tbl_book_copies.copies_bookid
+INNER JOIN tbl_book_authors ON tbl_book_copies.copies_bookid=tbl_book_authors.authors_bookid
+INNER JOIN tbl_library_branch ON tbl_book_copies.copies_branchid=tbl_library_branch.branch_branchid
+WHERE author_name = 'Stephen King' AND branch_branchname = 'Central';
+GO
+
+
+
+
+

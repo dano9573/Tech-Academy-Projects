@@ -1,0 +1,79 @@
+.full_page {
+	background: url(../images/camo_backgrounds.jpg);
+	
+}
+
+.jumbotron, jumbotron-fluid {
+	background-color: #3c4f1a;
+	color: #adb2a4;
+	opacity: 0.9;
+}
+.display-4, p {
+	font-family: "Helvetica", Arial, sans serif;
+	font-weight: bold;
+}
+
+
+
+/*----------------------------------
+	Profile pic
+----------------------------------*/
+.profile_pic, #doc {
+	border-radius: 10px;
+	display: block;
+	margin: auto;
+	padding: 0px;
+	opacity: 0.9;
+	float: right
+}
+
+
+/*----------------------------------
+	About style
+----------------------------------*/
+.about {
+	margin-top: 300px;
+	
+
+}
+.about_h2, .projects_h2{
+	font-family: "Times New Roman", Arial, sans serif;
+	font-weight: bold;
+	color: #adb2a4;
+	margin-bottom: 10px;
+	font-size: 2.5em;
+	
+} 
+
+.about_content {
+	
+}
+
+#about_row {
+	background-color: #3c4f1a;
+	color: #adb2a4;
+	
+}
+
+.project {
+	margin-top: 300px;
+	
+}
+
+#projectlink {
+	background-color: #3c4f1a;
+	color: #adb2a4;
+	margin-top: 10px;
+	margin-bottom: 200px;
+	
+}
+
+.contactme {
+	color: #adb2a4;
+	font-size: 1.5em;
+}
+
+
+
+
+

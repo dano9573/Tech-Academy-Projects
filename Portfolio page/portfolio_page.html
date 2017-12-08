@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Dan Gorton</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/project_style.css">
+  </head>
+  <body class="full_page">
+	<div class="container">
+		
+		<!-- navigation -->
+		<nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+				<a class="navbar-brand" href="#"></a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#aboutme">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projectlink">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contactme">Contact Dan</a>
+				</li>
+				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#signup">Submit contact info</button>
+				</li>
+			</ul>
+			</div>
+		</nav>
+
+		<!-- /navigation -->
+		<!-- modal -->
+	<div class="modal fade" id="signup">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Submit Contact Info.</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+				<form>
+					<fieldset class="form-group">
+						<label for="firstname">First Name:</label>
+						<input type="text" class="form-control" id="firstname" placeholder="First Name...">
+					</fieldset>
+					<fieldset class="form-group">
+						<label for="firstname">Last Name:</label>
+						<input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+					</fieldset>
+					<fieldset class="form-group">
+						<label for="firstname">Email:</label>
+						<input type="text" class="form-control" id="email" placeholder="Email...">
+					</fieldset>
+				</form>	
+				</div>
+				<div class="modal-footer">
+					<p>Don't worry your info is always secure!</p>
+					<button type="button" class="btn btn-success">Submit</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		<!-- /modal -->
+
+		<!-- jumbotron -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Dan Gorton Jr.</h1>
+				<p class="lead">"I'm your huckleberry." -- Doc Holiday</p>
+				<div class="profile_pic">
+					<img id="doc" src="./images/huckleberry_doc_holliday.jpg" width="150" height="200">
+				</div>
+			</div>
+		</div>
+		
+		<!-- /jumbotron -->
+		
+		<!-- profile pic -->
+		
+	<!--	<div class="profile_pic">
+			<img id="doc" src="./images/huckleberry_doc_holliday.jpg" width="250" height="300">
+		</div>  -->
+		
+		<!-- /profile pic -->
+
+
+		<!-- About -->
+			<div class="about" id="aboutme">
+				<h2 class="about_h2" >About me</h2>		
+			</div>		
+			<div class="container">
+				<div class="row" id="about_row">
+					<div class="col align-self-start md-8">
+						<p class="about_p1">Living in the Pacific Northwest most of my life has provided many opportunities.
+										   There is no place like home.</p>
+							<img src="./images/the_long_road_home.jpg" width="200px" height="100px" alt="Long road home" href=> 
+					</div>
+					<div class="col align-self-center">
+						<a href="https://www.learncodinganywhere.com">
+							<img id="techpic" src="./images/the_tech-academy.jpg" width="200px" height="100px" alt="the tech academy logo">
+						</a>
+						<p class="about_p2">Changing careers was not an easy decision, but one I have dreamt about.  
+										   I love to solve problems and find efficient solutions to create profound change.
+										   Programming seemed the logical choice.</p>
+					</div>
+					<div class="col align-self-end">
+						<p class="about_p3">Three children and a grown son have provided riches I could never
+										   have dreamt were possible.
+										   <br>
+										   <br>
+										   "Give a man a fish and feed him for a day, teach a man to fish and you feed him for a lifetime."</p>
+										   
+					</div>
+				</div>
+			</div>
+			
+		<!-- projects -->
+		
+		<div class="project" id="projects">
+				<h2 class="projects_h2" >Projects</h2>		
+			</div>
+		
+		<div class="container" id="projectlink">
+			<div class="row align-items-start">
+				<div class="col">
+					<p>SQL / MySQL DATABASE for Guide and Service dogs.  Partnering with an experienced database developer
+					to grow my database skills and provide a needed service for the Guide and Service Dog community.</p>
+					<img src="./images/service_dog.jpg" width="200px" height="100px" alt="Service Dogs">
+				</div>
+				
+				<div class="col">
+					<p>WEB DEVELOPMENT and SEO services.  Mastering web development through repitition, research and hard work!</p>
+					<img src="./images/web_developer.jpg" width="200px" height="100px" alt="Web Development">
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col">
+					Future project
+				</div>
+				<div class="col">
+					Future Project
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+		
+		<!-- /projects -->
+
+	<!-- footer -->
+	<div class="contactme">
+		<div class="d-flex flex-row justify-content-center">
+			<div class="p-4">Email:  dano9573@gmail.com</div>
+			<div class="p-4">803 NE 169th Ct Vancouver, WA 98684</div>
+			<div class="p-4">PH: 503-515-1378</div>
+		</div>
+	</div>
+	<!-- /footer -->
+	
+	
+	</div>
+	
+	
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+  </body>
+
+
+</html>

@@ -1,0 +1,167 @@
+body {
+	background-color: #ff8080;
+	display: block;
+	
+}
+
+div {
+	display: block;
+}
+
+#menupg {
+	margin: 0% auto;
+	width: 550px;
+	
+	
+	
+}
+
+#formmenu {
+	margin: 5% auto;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    
+}
+
+#menu {
+    flex: 1 200px;
+    min-width: 0;
+    border: 5px solid #5b313b;
+    padding: 10px;
+	border-radius: 10px;
+	background-color: #d1babf;
+	font-weight: bold;
+	font-family: times new roman, san-serif;
+	
+}
+
+
+h1 {
+	font-family: Arial, san-serif;
+	color: #404040;
+	font-size: 4.0em;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000
+}
+h4 {
+	font-family: Arial, san-serif;
+	color: #404040;
+	font-weight: ;
+	text-align: center;
+	
+	
+}
+h3 {
+	font-family: Arial, san-serif;
+	color: #404040;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+.order_button {
+	margin: 5% auto;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+	
+}
+
+.button {
+	min-width: 0;
+    border: 5px solid #5b313b;
+    padding: 10px;
+	border-radius: 25px;
+	background-color: #d1babf;
+	flex: 1 200px;
+	text-align: center;
+	font-weight: bold;
+	font-family: times new roman, san-serif;
+	cursor: pointer;
+}
+
+.button:hover {
+	font: 18px roboto, sans-serif;
+    font-weight: bold;
+    color: #000;
+    background-color: #e8d3d5;
+    box-shadow: 0 0 0 2px #5b313b;
+}
+
+#cart {
+	opacity: 0;
+	margin: 15px auto;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: #e8d3d5;
+	
+}
+
+#title1 {
+	flex: 1 250px;
+    height: 50px;
+    width: 250px;
+    padding: 0 0 0px 10px;
+    background-color: #e8d3d5;
+	
+}
+
+#title2 {
+	flex: 1 250px;
+    height: 50px;
+    width: 250px;
+    padding: 0 0 0px 10px;
+    background-color: #e8d3d5;
+	
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+    width: 100px;
+    padding: 0 0 0px 10px;
+    background-color: #e8d3d5;
+	
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+    width: 100px;
+    padding: 20px 0 0px 10px;
+    background-color: #e8d3d5;
+	font-weight: bold;
+	
+}
+
+#showText1 {
+	font-size: 1.0em;
+    flex: 1 250px;
+    padding: 1px 0 10px 10px;
+    width: 100px;
+   
+}
+
+#showText2  {
+	font-size: 1.0em;
+    flex: 1 250px;
+    padding: 1px 0 10px 10px;
+    width: 100px;
+    
+	
+}
+
+
+
+
+
+
+
